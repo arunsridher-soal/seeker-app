@@ -2,7 +2,7 @@ import { useEffect } from "react";
 import "./App.css";
 import io from "socket.io-client";
 
-const socket = io("https://api.dsep.samagra.io");
+const socket = io("https://dsep-protocol-client.becknprotocol.io");
 function App() {
   useEffect(() => {
     socket.on("connect", () => {
